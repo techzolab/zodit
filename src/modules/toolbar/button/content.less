@@ -1,0 +1,22 @@
+/*!
+ * Zodit Editor (https://techzolab.net/opensource/zodit)
+ * Released under MIT see LICENSE.txt in the project root for license information.
+ * Copyright (c) 2021-2022 Nazrul Islam Nadeem. All rights reserved. https://techzolab.net
+ */
+
+@import (reference) '../../../styles/variables';
+@import (reference) '../../../styles/mixins';
+@import (reference) 'zodit/core/ui/button/button/button';
+
+.zodit-toolbar-content {
+	.zodit-ui-button();
+
+	padding: 0;
+	border: 1px solid transparent;
+
+	&:hover:not([disabled]) {
+		background-color: transparent;
+		opacity: 1;
+		outline: 0;
+	}
+}

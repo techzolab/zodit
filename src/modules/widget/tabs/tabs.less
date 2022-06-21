@@ -1,0 +1,69 @@
+/*!
+ * Zodit Editor (https://techzolab.net/opensource/zodit)
+ * Released under MIT see LICENSE.txt in the project root for license information.
+ * Copyright (c) 2021-2022 Nazrul Islam Nadeem. All rights reserved. https://techzolab.net
+ */
+
+@import (reference) '../../../styles/variables';
+@import (reference) '../../../styles/mixins';
+
+.zodit-tabs {
+	.font();
+
+	.zodit-tabs__buttons {
+		display: flex;
+		justify-content: center;
+		margin-top: 4px;
+		margin-bottom: calc(var(--padding-default) / 2);
+		line-height: 18px;
+
+		> * {
+			margin-left: calc(var(--padding-default) / 2);
+			cursor: pointer;
+
+			&:only-of-type {
+				width: 100%;
+			}
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		@media (max-width: @screen-xs) {
+			display: block;
+
+			> * {
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+	}
+
+	&__button {
+		min-width: 80px;
+
+		&_columns_3 {
+			width: calc(100% / 3);
+		}
+
+		&_columns_2 {
+			width: 50%;
+		}
+	}
+
+	.zodit-tabs__wrapper {
+		.zodit-tab {
+			display: none;
+
+			&.zodit-tab_active {
+				display: block;
+			}
+
+			&.zodit-tab_empty {
+				min-width: 220px;
+				min-height: 100px;
+			}
+		}
+	}
+}

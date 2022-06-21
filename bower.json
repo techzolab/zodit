@@ -1,0 +1,33 @@
+{
+  "name": "zodit",
+  "description": "Zodit is awesome and usefully wysiwyg editor with filebrowser",
+  "main": [
+    "build/zodit.min.js",
+    "build/zodit.min.css"
+  ],
+  "authors": [
+    {
+      "name": "Nazrul Islam Nadeem",
+      "email": "nazrul.devs@gmail.com",
+      "homepage": "http://techzolab.net/contacts.html"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "wysiwyg",
+    "jquery",
+    "editor",
+    "rich",
+    "zodit"
+  ],
+  "homepage": "http://techzolab.net/opensource/zodit/",
+  "ignore": [
+    "*",
+    "!build/",
+    "!build/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:techzolab/zodit.git"
+  }
+}

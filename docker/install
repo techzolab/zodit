@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker build -t zodit .
+
+docker run --rm -v $PWD/..:/app --user zodit zodit bash -c "npm install && npm audit fix --force"

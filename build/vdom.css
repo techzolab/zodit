@@ -1,0 +1,18 @@
+/*!
+ * @techzolab/zodit - Zodit is awesome and usefully wysiwyg editor with filebrowser (@techzolab)
+ * Author: Nazrul Islam Nadeem <nazrul.devs@gmail.com> (https://techzolab.net/)
+ * Version: v1.0.2
+ * Url: https://techzolab.net/zodit/
+ * License(s): MIT
+ */
+	
+.zodit-v-dom-container {
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.zodit-v-dom-container:empty:before {
+  content: 'Test';
+  opacity: 0.6;
+}
+

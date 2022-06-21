@@ -1,0 +1,162 @@
+/*!
+ * Zodit Editor (https://techzolab.net/opensource/zodit)
+ * Released under MIT see LICENSE.txt in the project root for license information.
+ * Copyright (c) 2021-2022 Nazrul Islam Nadeem. All rights reserved. https://techzolab.net
+ */
+
+@import (reference) '../variables';
+
+.zodit-dialog_theme_dark,
+.zodit_theme_dark {
+	--color-border: #6b6b6b;
+
+	.zodit-toolbar-collection,
+	.zodit-toolbar-editor-collection {
+		&_mode_horizontal {
+			&:after {
+				background-color: var(--color-border);
+			}
+		}
+	}
+
+	&.zodit-container {
+		background-color: var(--dark_background_color);
+	}
+
+	&.zodit-container.zodit_disabled {
+		background-color: var(--dark_background_color);
+	}
+
+	&.zodit-container:not(.zodit_inline) .zodit-workplace {
+		border-color: var(--dark_background_color);
+		background-color: var(--dark_background_color_default);
+	}
+
+	.zodit-popup {
+		&__content {
+			background: var(--dark_background_ligher);
+		}
+	}
+
+	.zodit-ui-button,
+	.zodit-toolbar-button {
+		&__text {
+			color: var(--dark_text_color);
+		}
+
+		&,
+		&__button,
+		&__trigger {
+			&:hover:not([disabled]) {
+				background-color: var(--dark_background_ligher);
+			}
+		}
+	}
+
+	.zodit-status-bar {
+		border-color: rgba(95, 92, 92, 0.8);
+		background-color: rgba(95, 92, 92, 0.8);
+		color: var(--dark_text_color);
+
+		a.zodit-status-bar-link {
+			&,
+			&:hover,
+			&:visited {
+				color: var(--dark_text_color);
+			}
+		}
+
+		&,
+		.zodit-status-bar__item a,
+		.zodit-status-bar__item span {
+			color: var(--dark_text_color);
+		}
+	}
+
+	.zodit-toolbar__box:not(:empty) {
+		background: var(--dark_toolbar_color);
+	}
+
+	.zodit__upload-button svg,
+	.zodit-toolbar-button .zodit-toolbar-button__trigger,
+	.zodit-icon {
+		fill: var(--dark_icon_color);
+		stroke: var(--dark_icon_color);
+	}
+
+	.zodit-icon-close {
+		stroke: var(--dark_icon_color);
+	}
+
+	.zodit-wysiwyg_iframe,
+	.zodit-wysiwyg {
+		background-color: var(--dark_background_color);
+		color: var(--dark_text_color);
+	}
+
+	.zodit-form textarea,
+	.zodit-form input[type='url'],
+	.zodit-form input[type='text'] {
+		border-color: var(--dark_toolbar_seperator_color2);
+		background-color: var(--dark_toolbar_seperator_color1);
+		color: var(--dark_text_color);
+	}
+
+	.zodit-form button {
+		background-color: var(--dark_toolbar_seperator_color3);
+		color: var(--dark_text_color);
+	}
+
+	.zodit-placeholder {
+		color: var(--dark_text_color_opacity80);
+	}
+
+	.zodit-drag-and-drop__file-box,
+	.zodit_uploadfile_button {
+		color: var(--dark_text_color);
+
+		&:hover {
+			background-color: var(--dark_toolbar_seperator_color3);
+		}
+	}
+
+	.zodit-add-new-line {
+		&::before {
+			border-top-color: var(--dark_toolbar_seperator_color2);
+		}
+
+		span {
+			border-color: var(--dark_toolbar_seperator_color2);
+			background: var(--dark_toolbar_seperator_color3);
+
+			svg {
+				fill: var(--dark_text_color);
+			}
+		}
+	}
+
+	.zodit-resizer > i {
+		border-color: var(--dark_icon_color);
+		background: var(--dark_toolbar_seperator_color3);
+	}
+
+	.zodit-select,
+	.zodit-input {
+		border-color: var(--dark_border_color);
+		background-color: var(--dark_background_ligher);
+		color: var(--dark_border_color);
+	}
+
+	&.zodit-dialog {
+		background-color: var(--dark_background_color);
+
+		.zodit-filebrowser__files.active .zodit-filebrowser__files-item,
+		.zodit-dialog__header {
+			border-color: var(--dark_border_color);
+		}
+
+		.zodit-filebrowser__files.active .zodit-filebrowser__files-item-info {
+			background-color: var(--dark_text_color);
+		}
+	}
+}

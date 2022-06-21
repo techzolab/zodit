@@ -1,0 +1,39 @@
+/*!
+ * @techzolab/zodit - Zodit is awesome and usefully wysiwyg editor with filebrowser (@techzolab)
+ * Author: Nazrul Islam Nadeem <nazrul.devs@gmail.com> (https://techzolab.net/)
+ * Version: v1.0.2
+ * Url: https://techzolab.net/zodit/
+ * License(s): MIT
+ */
+	
+@keyframes jdSpeakAnimation {
+  0% {
+    fill: green;
+    opacity: 0.3;
+  }
+  100% {
+    fill: #4285f4;
+  }
+}
+.zodit-toolbar-button_pulse_true svg {
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-name: jdSpeakAnimation;
+}
+.zodit-speech-recognize__list-item {
+  display: flex;
+  padding: var(--jd-padding-default);
+}
+.zodit-speech-recognize__popup {
+  font-family: var(--jd-font-default);
+  font-size: var(--jd-font-size-default);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 24px;
+  background-color: rgba(240, 240, 240, 0.4);
+  border-radius: 8px;
+  font-size: 32px;
+  transform: translate(-50%, -50%);
+}
+
