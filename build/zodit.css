@@ -657,6 +657,7 @@ svg.zodit-icon {
 .zodit-container .zodit-workplace {
   position: relative;
   overflow: auto;
+  background: white;
 }
 .zodit .zodit-workplace .zodit-wysiwyg,
 .zodit-container .zodit-workplace .zodit-wysiwyg,
@@ -674,6 +675,7 @@ svg.zodit-icon {
 }
 .zodit-container:not(.zodit_inline) .zodit-workplace {
   max-height: 100%;
+  background: white;
   border: 0 solid #dadada;
 }
 .zodit-container:not(.zodit_inline).zodit_disabled {
@@ -748,11 +750,9 @@ svg.zodit-icon {
 }
 .zodit-dialog_theme_dark.zodit-container:not(.zodit_inline) .zodit-workplace {
   border-color: #575757;
-  background-color: undefined --jd-dark-text-color: #fff;
 }
 .zodit_theme_dark.zodit-container:not(.zodit_inline) .zodit-workplace {
   border-color: #575757;
-  background-color: undefined --jd-dark-text-color: #fff;
 }
 .zodit-dialog_theme_dark .zodit-popup__content {
   background: #787878;
@@ -1081,7 +1081,7 @@ svg.zodit-icon {
   overflow: auto;
   max-height: 300px;
   padding: 8px;
-  background: #fff;
+  background: #ffff;
   overflow-scrolling: touch;
 }
 .zodit-context-menu_padding_false .zodit-context-menu__content {
@@ -1142,7 +1142,7 @@ svg.zodit-icon {
   overflow: auto;
   max-height: 300px;
   padding: 8px;
-  background: #fff;
+  background: #ffff;
   overflow-scrolling: touch;
 }
 .zodit-popup_padding_false .zodit-popup__content {
@@ -2380,7 +2380,7 @@ svg.zodit-icon {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #fff;
+  background-color: #ffff;
   content: '';
 }
 .zodit-toolbar-editor-collection_mode_horizontal:after {
@@ -2390,7 +2390,7 @@ svg.zodit-icon {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #fff;
+  background-color: #ffff;
   content: '';
 }
 .zodit-toolbar-collection_size_tiny.zodit-toolbar-collection_mode_horizontal {

@@ -36,7 +36,7 @@
   --jd-color-placeholder: var(--jd-color-gray-dark);
   --jd-color-panel: #f9f9f9;
   --jd-color-resizer: #c8c8c8;
-  --jd-color-background-default: var(--jd-color-white);
+  --jd-color-background-default: #ffff;
   --jd-color-background-gray: var(--jd-color-gray);
   --jd-color-background-gray-hover: #f8f8f8;
   --jd-color-background-hover: #7a450f;
@@ -607,6 +607,7 @@ svg.zodit-icon {
 .zodit-container .zodit-workplace {
   position: relative;
   overflow: auto;
+  background: white;
 }
 .zodit .zodit-workplace .zodit-wysiwyg,
 .zodit-container .zodit-workplace .zodit-wysiwyg,
@@ -624,6 +625,7 @@ svg.zodit-icon {
 }
 .zodit-container:not(.zodit_inline) .zodit-workplace {
   max-height: 100%;
+  background: white;
   border: 0 solid var(--jd-color-border);
 }
 .zodit-container:not(.zodit_inline).zodit_disabled {
@@ -683,7 +685,6 @@ svg.zodit-icon {
 .zodit-dialog_theme_dark.zodit-container:not(.zodit_inline) .zodit-workplace,
 .zodit_theme_dark.zodit-container:not(.zodit_inline) .zodit-workplace {
   border-color: var(--jd-dark_background_color);
-  background-color: var(--jd-dark_background_color_default);
 }
 .zodit-dialog_theme_dark .zodit-popup__content,
 .zodit_theme_dark .zodit-popup__content {
