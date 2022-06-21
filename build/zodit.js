@@ -1,7 +1,7 @@
 /*!
  * @techzolab/zodit - Zodit is awesome and usefully wysiwyg editor with filebrowser (@techzolab)
  * Author: Nazrul Islam Nadeem <nazrul.devs@gmail.com> (https://techzolab.net/)
- * Version: v1.0.2
+ * Version: v1.0.3
  * Url: https://techzolab.net/zodit/
  * License(s): MIT
  */
@@ -17353,7 +17353,7 @@ var View = (function (_super) {
         _this.isView = true;
         _this.mods = {};
         _this.components = new Set();
-        _this.version = "1.0.2";
+        _this.version = "1.0.3";
         _this.buffer = storage_1.Storage.makeStorage();
         _this.storage = storage_1.Storage.makeStorage(true, _this.componentName);
         _this.OPTIONS = View.defaultOptions;
@@ -17499,10 +17499,10 @@ var View = (function (_super) {
         configurable: true
     });
     View.prototype.getVersion = function () {
-        return "1.0.2";
+        return "1.0.3";
     };
     View.getVersion = function () {
-        return "1.0.2";
+        return "1.0.3";
     };
     View.prototype.initOptions = function (options) {
         this.options = (0, helpers_1.ConfigProto)(options || {}, (0, helpers_1.ConfigProto)(this.options || {}, View.defaultOptions));

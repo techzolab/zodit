@@ -1,6 +1,6 @@
 {
 	"name": "@techzolab/zodit",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"private": false,
 	"description": "Zodit is awesome and usefully wysiwyg editor with filebrowser (@techzolab)",
 	"main": "build/zodit.min.js",
