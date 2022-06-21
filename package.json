@@ -7,7 +7,7 @@
 	"types": "./types/index.d.ts",
 	"scripts": {
 		"coverage": "npx type-coverage ./src --detail --ignore-files 'build/**' --ignore-files 'test/**' --ignore-files 'examples/**'",
-		"newversion": "npm run clean && npm run types && npm run build-es5 && npm run build-es2018 && npm run build-es2018-en && npm run build-no-uglify-es5 && npm run build-no-uglify-es2018 && npm run build-no-uglify-es2018-en && npm run newversiongit && npm run github && npm publish --access public npm publish --access public ./ && rm -rf types/",
+		"newversion": "npm run clean && npm run types && npm run build-es5 && npm run build-es2018 && npm run build-es2018-en && npm run build-no-uglify-es5 && npm run build-no-uglify-es2018 && npm run build-no-uglify-es2018-en && npm run newversiongit && npm run github && npm publish --access public ./ && rm -rf types/",
 		"newversiongit": "git add --all  && git commit -m \"New version $npm_package_version. \" && git tag $npm_package_version && git push --tags origin HEAD:main",
 		"start": "node server.js --port=2000",
 		"clean": "rm -rf build/*",
